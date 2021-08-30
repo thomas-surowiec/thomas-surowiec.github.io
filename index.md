@@ -17,11 +17,11 @@ The school intends to introduce key components of **uncertainty quantification**
 
 # Course Descriptions
 
-## PDE-Constrained Optimization under Uncertainty
+## PDE-Constrained Optimization under Uncertainty (PDEOP)
 
 Many problems in science and engineering can be formulated as optimization problems governed by a system of partial differential equations (PDEs); for example, the design of a load-bearing elastic system or the control of fluid flow in an oil reservoir.  In virtually all applications, parameters of the PDE system cannot be fully characterized, leading to uncertainty that must be accounted for in the optimization problem formulation.  In the first part of this course, we will motivate this class of PDE-constrained optimization problems with numerous engineering applications, paying particular attention to the definition and quantification of risk.  Moreover, we will provide an introductory discussion of the associated mathematical challenges.  In the second part, we will discuss the numerical solution of this class of problems.  In particular, we will discuss the popular stochastic gradient and sample average approximation approaches.  We will also discuss more advanced, structure-exploiting optimization methods based on adaptive approximation and dual regularization.
 
-## Optimization und Uncertainty in Industrial Applications
+## Optimization und Uncertainty in Industrial Applications (OUIA)
 
 Course Part I:
  
@@ -35,7 +35,7 @@ Title: “Exploiting Structure in stochastic programming for Energy management�
  
 In this talk we will discuss how one can draw benefits from having identified specific structure within energy management problems. We will also discuss how lack of convexity can be reasonably palliated by exploiting advantageous decomposition strategies. In particular we will showcase some interesting results obtained when moreover these ideas are combined with classic ideas of Bender’s type decomposition. Beyond the scope of handling uncertainty with recourse, we will also present several recent insights in handling uncertainty through the use of probability constraints. More specifically we will mention recent insights w.r.t. the understanding of “convexity” and differentiability of probability functions.
 
-## Dynamic/Multistage Stochastic Optimization
+## Dynamic/Multistage Stochastic Optimization (DMSO)
 
 Course part I: Risk
 Risk measures, which find their origins in the insurance industry, are a genuine concept for quantifying risk. The first course reviews mathematical properties of risk measures with the idea to have them available for stochastic optimization.
@@ -49,7 +49,7 @@ This lecture intends to extend the classical setting by incorporating risk in th
 
 
 
-## Multilevel methods for random partial differential equations
+## Multilevel methods for random partial differential equations (MLPDE)
 
 Multilevel Monte Carlo methods have become increasingly popular over the last decade, due to their simplicity and their ability to significantly outperform standard Monte Carlo approaches in complex simulation tasks. In this course, we will show how the multilevel methodology can be applied to modelling and simulation using partial differential equations.
 
@@ -61,7 +61,7 @@ In the second part of the course, we will cover more advanced topics including:
 - multilevel methods based on Quasi-Monte Carlo sampling,
 - multilevel methods for computing higher order moments and probabilities.
 
-## Bayesian Inverse Problems
+## Bayesian Inverse Problems (BIP)
 
 Uncertainty Quantification (UQ) is an interesting, fast growing research area aimed at developing methods to address the impact of parameter, data and model uncertainty in complex systems. In this course we will focus on the identification of parameters through observations of the response of the system - the inverse problem. The uncertainty in the solution of the inverse problem will be described via the Bayesian approach. We will derive Bayes' theorem in the setting of finite dimensional parameter spaces, and discuss properties such as well-posedness, statistical estimates and connections to classical regularization methods. We will briefly examine the extension of the Bayesian approach to the infinite dimensional setting. The remainder of this course will be devoted to algorithms for the efficient approximation of the solution of the Bayes inverse problem.
 
@@ -69,13 +69,13 @@ Uncertainty Quantification (UQ) is an interesting, fast growing research area ai
 
 |               | September 8       | September 9       | September 10       |
 |:--------------|:------------------|:------------------| :------------------|
-| 13:00 - 14:00 | Course 1 Part I   | Course 3 Part I   |  Course 4 Part I   | 
+| 13:00 - 14:00 | BIP Part I        | MLPDE Part I      |  DMSO     Part I   | 
 | 14:00 - 14:15 | Break             | Break             |  Break             | 
-| 14:15 - 15:15 | Course 1 Part II  | Course 3 Part II  |  Course 4 Part II  | 
+| 14:15 - 15:15 | BIP Part II       | MLPDE Part II     |  DMSO     Part II  | 
 | 15:15 - 15:45 | Break             | Break             |  Break             | 
-| 15:45 - 16:45 | Course 2 Part I   | Young Researchers |  Course 5 Part I   | 
+| 15:45 - 16:45 | PDEOP Part I      | Young Researchers |  OUIA     Part I   | 
 | 16:45 - 17:00 | Break             | Break             |  Break             | 
-| 17:00 - 18:00 | Course 2 Part II  | Open Discussions  |  Course 5 Part II  | 
+| 17:00 - 18:00 | PDEOP Part II     | Open Discussions  |  OUIA     Part II  | 
 
 # Speaker Biographies
 
