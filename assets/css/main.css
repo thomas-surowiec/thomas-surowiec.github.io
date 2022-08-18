@@ -1586,7 +1586,8 @@
 
 	body {
 		background-color: #fff;
-		color: #999999;
+		/*color: #999999;*/
+		color: #515151;
 	}
 
 	body, input, select, textarea {
@@ -1805,7 +1806,8 @@
 	}
 
 	a {
-		color: #999999;
+		/*color: #999999;*/
+		color: #515151;
 	}
 
 		a:hover {
@@ -2391,7 +2393,8 @@
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #999999;
+		/*color: #999999;*/
+		color: #515151;
 	}
 
 		input[type="checkbox"] + label:before,
@@ -3033,7 +3036,8 @@
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #999999;
+				/*color: #999999;*/
+				color: #515151;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -3117,7 +3121,8 @@
 			}
 
 			.wrapper.style2 a {
-				color: #999999;
+				/*color: #999999;*/
+				color: #515151;
 			}
 
 				.wrapper.style2 a:hover {
