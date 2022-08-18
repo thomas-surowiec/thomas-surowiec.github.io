@@ -1964,7 +1964,8 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: #3498db;
+		/* background-color: #3498db; */
+		background-color: rgba(255,255,255,0);
 		color: #fff !important;
 	}
 
@@ -2954,7 +2955,7 @@
 				.wrapper.style1 input[type="button"]:hover,
 				.wrapper.style1 button:hover,
 				.wrapper.style1 .button:hover {
-					background-color: #4aa3df;
+					background-color:  #4aa3df;
 				}
 
 				.wrapper.style1 input[type="submit"]:active,
@@ -2962,7 +2963,7 @@
 				.wrapper.style1 input[type="button"]:active,
 				.wrapper.style1 button:active,
 				.wrapper.style1 .button:active {
-					background-color: #258cd1;
+					background-color:  #258cd1;
 				}
 
 				.wrapper.style1 input[type="submit"].alt,
