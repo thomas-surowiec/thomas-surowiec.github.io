@@ -3923,3 +3923,33 @@
 			}
 
 		}
+
+
+/* 1. Reset the spacing on the specific elements causing the gap */
+.publication-list h3 {
+	/* Remove the default heading bottom margin entirely */
+	margin-bottom: 0;
+
+	/* Keep the top margin for spacing *above* the year group (e.g., from the previous year) */
+	margin-top: 2em;
+}
+
+/* 2. Target the Ordered List and remove its default top margin */
+.publication-list {
+	/* Remove the default top margin from the ordered list */
+	margin-top: 0;
+}
+
+/* 3. Ensure the list items still have space between them (from previous suggestion) */
+#main li {
+	font-size: 1em;
+	/* This rule adds space *below* each publication entry */
+	margin-bottom: 0.8em;
+	line-height: 1.5em;
+}
+
+html {
+	/* Globally scales the base font size of the entire website. */
+	/* 112.5% = 18px base font size (up from default 16px) */
+	font-size: 200%;
+}
