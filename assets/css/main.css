@@ -3942,7 +3942,7 @@
 
 /* 3. Ensure the list items still have space between them (from previous suggestion) */
 #main li {
-	font-size: 1.3em;
+	font-size: 1em;
 	/* This rule adds space *below* each publication entry */
 	margin-bottom: 0.8em;
 	line-height: 1.5em;
