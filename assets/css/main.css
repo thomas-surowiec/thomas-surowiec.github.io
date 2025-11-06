@@ -3948,64 +3948,24 @@
 	line-height: 1.5em;
 }
 
-@media screen and (max-width: 736px) {
-
-	/* Ensure all columns (col1 and col2) reset to 100% width on small screens (max-width: 736px) */
-	.flex.flex-2 .col.col1,
-	.flex.flex-2 .col.col2 {
-		width: 100% !important;
-		/* Forces the column to take up full width, fixing the stacking issue */
-		margin-left: 0 !important;
-		/* Removes any leftover column margin/offset */
-	}
-
-	/* You may also want to remove the left-side image spacing to center everything */
-	.flex.flex-2 .col.col1 .image,
-	.flex.flex-2 .col.col2 .image {
-		margin: 0 auto 2em auto !important;
-	}
-}
-
 /* ================================================= */
-/* FIX FOR MOBILE: IMAGE ROUNDNESS AND BORDER        */
+/* CLEAN FIX FOR MOBILE: IMAGE ROUNDNESS & CENTERING */
 /* ================================================= */
 
 @media screen and (max-width: 736px) {
 
-	/* 1. Re-enforce the roundness for images on mobile */
-	.image.round,
-	.image.round img {
-		/* This ensures the image is forced into a circle shape */
-		border-radius: 100% !important;
-	}
-
-	/* 2. Fix the Box Shadow/Border Visibility on Mobile */
-	/* On mobile, the template sometimes overrides the default box-shadow, 
-       or the image is resized in a way that clips the border. */
-	.image.round {
-		/* Re-apply the box shadow/border from the desktop definition (Line 975 in your CSS) */
-		box-shadow: 0px 0px 0px 7px #fff, 0px 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
-
-		/* Ensure that the containing element (the .image div) is treated as a block */
+	/* Step 1: Force the container to behave as a block for centering */
+	.flex.flex-2 .col.col1 .image {
+		/* This ensures the image wrapper can be centered horizontally */
 		display: block !important;
-
-		/* Setting a defined height/width is often necessary to resolve mobile sizing issues */
-		/* Since your images are likely square, 100% height/width ensures it scales down cleanly */
-		max-width: 100% !important;
-		width: 100% !important;
-		/* Forces the image wrapper to respect available space */
-		height: auto !important;
+		/* Centers the image container within its column */
+		margin: 0 auto 2em auto !important;
 	}
 
-	/* 3. Handle the images inside the flex columns */
-	/* This ensures the image inside the column, especially the small profile picture, 
-       is centered and has a manageable maximum size on a phone screen. 
-       This specifically targets the image in your "About Me" section. */
-	.flex.flex-2 .col.col1 .image,
-	.flex.flex-2 .col.col2 .image {
-		max-width: 80% !important;
-		/* Keeps the main profile image from dominating a vertical screen */
-		margin: 0 auto 2em auto !important;
-		/* Centers the block image */
+	/* Step 2: Re-establish the circular shape using priority selectors */
+	.flex.flex-2 .col.col1 .image.round,
+	.flex.flex-2 .col.col1 .image.round img {
+		/* Forces the circle shape to ensure it applies */
+		border-radius: 100% !important;
 	}
 }
