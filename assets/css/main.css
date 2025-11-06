@@ -3947,3 +3947,21 @@
 	margin-bottom: 0.8em;
 	line-height: 1.5em;
 }
+
+@media screen and (max-width: 736px) {
+
+	/* Ensure all columns (col1 and col2) reset to 100% width on small screens (max-width: 736px) */
+	.flex.flex-2 .col.col1,
+	.flex.flex-2 .col.col2 {
+		width: 100% !important;
+		/* Forces the column to take up full width, fixing the stacking issue */
+		margin-left: 0 !important;
+		/* Removes any leftover column margin/offset */
+	}
+
+	/* You may also want to remove the left-side image spacing to center everything */
+	.flex.flex-2 .col.col1 .image,
+	.flex.flex-2 .col.col2 .image {
+		margin: 0 auto 2em auto !important;
+	}
+}
