@@ -1,3 +1,11 @@
 .DS_Store
 *.pages
 __pycache__/
+
+# Personal photos: kept locally, not published
+images/BAB05200.png
+images/BAB05211.jpg
+images/cropped-profile-photo.png
+images/profile-smile.jpeg
+images/self-portrait.png
+images/surowiec-opt1*
