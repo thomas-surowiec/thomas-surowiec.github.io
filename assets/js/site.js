@@ -13,7 +13,15 @@
     if (label) label.textContent = addr;
   });
 
-  /* 2. Publication filters (publications page only) */
+  /* 2. Splash photo: fade in once it has loaded (see .splash-bg in style.css) */
+  var splash = document.querySelector(".splash-bg img");
+  if (splash) {
+    var show = function () { requestAnimationFrame(function () { splash.classList.add("loaded"); }); };
+    if (splash.complete && splash.naturalWidth) show(); else splash.addEventListener("load", show);
+    splash.addEventListener("error", show);
+  }
+
+  /* 3. Publication filters (publications page only) */
   var list = document.getElementById("publist");
   if (!list) return;
 

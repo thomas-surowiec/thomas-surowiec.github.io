@@ -129,9 +129,13 @@ p, li { text-wrap: pretty; }
 
 /* ---------- Splash (home) ---------- */
 .splash { position: relative; isolation: isolate; overflow: hidden; color: #fff;
-  min-height: min(calc(100svh - 64px), 920px); display: grid; place-items: center; text-align: center; background: #0f1d33; }
+  min-height: min(calc(100svh - 64px), 920px); display: grid; place-items: center; text-align: center; background: #000; }
 .splash-bg, .splash-bg img { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; }
 .splash-bg img { object-fit: cover; object-position: 60% 40%; }
+/* Start on black with only the text, then fade the building in (site.js adds .loaded) */
+.js .splash-bg img { opacity: 0; transition: opacity 1.2s ease .25s; }
+.js .splash-bg img.loaded { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .js .splash-bg img { opacity: 1; transition: none; } }
 .splash::before {             /* overlay: keeps white text legible on any part of the photo */
   content: ""; position: absolute; inset: 0; z-index: -1;
   background:
