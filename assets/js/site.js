@@ -21,19 +21,15 @@
     splash.addEventListener("error", show);
   }
 
-  /* 3. Back-to-top button: show after one screen of scrolling; ring shows reading progress */
+  /* 3. Back-to-top button (shown on small screens only, see style.css) */
   var top = document.querySelector(".to-top");
   if (top) {
     var ticking = false;
     var update = function () {
-      var max = document.documentElement.scrollHeight - window.innerHeight;
-      var y = window.scrollY;
-      top.classList.toggle("show", y > window.innerHeight * 0.8);
-      top.style.setProperty("--read", max > 0 ? Math.min(1, y / max).toFixed(3) : 0);
+      top.classList.toggle("show", window.scrollY > window.innerHeight * 0.6);
       ticking = false;
     };
     window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
-    window.addEventListener("resize", update);
     top.addEventListener("click", function (e) {
       e.preventDefault();
       var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

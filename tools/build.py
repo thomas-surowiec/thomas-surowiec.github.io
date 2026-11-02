@@ -13,6 +13,7 @@ Requirements: Python 3.8+ with jinja2 and pyyaml
     pip install jinja2 pyyaml
 """
 import datetime as dt
+import hashlib
 import html
 import re
 import sys
@@ -27,6 +28,11 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent.parent
 ME = "T. M. Surowiec"          # bolded in author lists
 PAGES = ["index.html", "research.html", "publications.html", "seminar.html", "404.html"]
+
+
+def fingerprint(path):
+    """Short hash of a file's contents, used as ?v=... so browsers fetch changed CSS/JS."""
+    return hashlib.sha1((ROOT / path).read_bytes()).hexdigest()[:10]
 
 
 def load(name):
@@ -108,7 +114,8 @@ def main():
     ctx = dict(site=site, themes=site["themes"], topics=site["topics"], groups=groups,
                recent=recent, talks=talks, talk_groups=talk_groups,
                n_journal=len(published), year=today.year,
-               updated=today.strftime("%B %Y"), build_id=today.strftime("%Y%m%d"))
+               updated=today.strftime("%B %Y"),
+               css_v=fingerprint("assets/css/style.css"), js_v=fingerprint("assets/js/site.js"))
 
     for page in PAGES:
         out = env.get_template(page).render(page_file=page, **ctx)
