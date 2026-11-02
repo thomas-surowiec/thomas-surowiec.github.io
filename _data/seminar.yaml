@@ -1,0 +1,139 @@
+# OiO seminar archive. Edit, then run: python3 tools/build.py
+# Fields: date (Month D, YYYY), speaker, affiliation, title, abstract (PDF path, optional), video (URL, optional)
+
+- date: October 19, 2022
+  speaker: Karl Kunisch
+  affiliation: University of Graz & Radon Institute
+  title: Solution Concepts for Optimal Feedback Control of Nonlinear Partial Differential Equations
+  abstract: adverts/karl-kunisch-advert.pdf
+  video: https://www.youtube.com/watch?v=WxygcfVWghw
+- date: October 26, 2022
+  speaker: Niels Aage
+  affiliation: Technical University of Denmark
+  title: 'Ultra-high resolution structural optimization: Current state-of-the-art and new frontiers'
+  abstract: adverts/niels-aage-advert.pdf
+  video: https://www.youtube.com/watch?v=M7GJLikHCsM
+- date: November 2, 2022
+  speaker: Coralia Cartis
+  affiliation: University of Oxford
+  title: Sparse random embeddings and their applications to optimization
+  abstract: adverts/coralia-cartis-advert.pdf
+  video: https://www.youtube.com/watch?v=t_8YJx970bM
+- date: November 9, 2022
+  speaker: Lars Ruthotto
+  affiliation: Emory University
+  title: Neural Network Approaches for High-Dimensional Optimal Control
+  abstract: adverts/lars-ruthotto-advert.pdf
+  video: https://www.youtube.com/watch?v=XVEIUw2fv1A
+- date: November 16, 2022
+  speaker: Drew P. Kouri
+  affiliation: Sandia National Laboratories
+  title: An Inexact Trust-Region Algorithm for Nonsmooth Nonconvex Optimization
+  abstract: adverts/drew-p-kouri-advert.pdf
+  video: https://www.youtube.com/watch?v=ZYP6CpxpUhE
+- date: November 23, 2022
+  speaker: Brendan Keith
+  affiliation: Brown University
+  title: Adaptive Sampling for Constrained Optimization under Uncertainty
+  abstract: adverts/brendan-keith-advert.pdf
+  video: https://www.youtube.com/watch?v=5PVgj93AxPQ
+- date: November 30, 2022
+  speaker: Mathias Staudigl
+  affiliation: Maastricht University
+  title: Conditional Gradient methods for generalised self-concordant minimization
+  abstract: adverts/mathias-staudigl-advert.pdf
+  video: https://www.youtube.com/watch?v=y1WUhMOgGEE
+- date: December 7, 2022
+  speaker: Michael Hintermüller
+  affiliation: Humboldt-Universität zu Berlin & Weierstraß-Institut
+  title: PDE-Constrained Optimization with Learning-Informed Structures
+  abstract: adverts/michael-hintermueller-advert.pdf
+  video: https://www.youtube.com/watch?v=6K1X2ojYl1g
+- date: December 14, 2022
+  speaker: Johannes Royset
+  affiliation: Naval Postgraduate School
+  title: 'Rockafellian functions: The most important concept in optimization that you haven’t heard of'
+  abstract: adverts/johannes-royset-advert.pdf
+  video: https://www.youtube.com/watch?v=LQQ-aZ9lvAg
+- date: December 21, 2022
+  speaker: Johannes Milz
+  affiliation: Technische Universität München
+  title: Consistency of Monte Carlo Estimators for Risk-Neutral PDE-Constrained Optimization
+  abstract: adverts/johannes-milz-advert.pdf
+  video: https://www.youtube.com/watch?v=r8iMfiyTIRc
+- date: March 8, 2023
+  speaker: Paul Manns
+  affiliation: Technische Universität Dortmund
+  title: Regularization in Integer Optimal Control -- Lessons Learned and Challenges Ahead
+  abstract: adverts/paul-manns-advert.pdf
+  video: https://youtu.be/_IfzfeKdjCM
+- date: March 29, 2023
+  speaker: Vyacheslav Kungurtsev
+  affiliation: Czech Technical University, Prague
+  title: Simultaneous Online Model Identification and Production Optimization Using Modifier Adaptation as a POMDP
+  abstract: adverts/vyacheslav-kungurtsev-advert.pdf
+  video: https://youtu.be/Rgvy72VjUY8
+- date: April 25, 2023
+  speaker: Alfio Borzi
+  affiliation: Julius-Maximilians-Universität Würzburg
+  title: Quantum models and optimal control problems
+  abstract: adverts/alfio-borzi-advert.pdf
+  video: https://youtu.be/IUs3XY8VW0E
+- date: May 3, 2023
+  speaker: Boris Mordukhovich
+  affiliation: Wayne State University, USA
+  title: Generalized Newton Methods in Nonsmooth Optimization
+  abstract: adverts/boris-mordukhovich-advert.pdf
+  video: https://youtu.be/-qn736XIvAo
+- date: May 24, 2023
+  speaker: Harbir Antil
+  affiliation: George Mason University
+  title: Optimization, Digital Twins and Augmented Lagrangian Methods
+  abstract: adverts/harbir-antil-advert.pdf
+  video: https://youtu.be/tTXUxGohT-Y
+- date: October 4, 2023
+  speaker: Sören Bartels
+  affiliation: Albert-Ludwigs-Universität Freiburg
+  title: Error estimates for nonconforming and discontinuous discretizations of nonsmooth problems via convex duality
+  abstract: adverts/soeren-bartels-advert.pdf
+- date: October 11, 2023
+  speaker: Michael Ulbrich
+  affiliation: Technische Universität München
+  title: A Semismooth Newton Stochastic Proximal Point Algorithm with Variance Reduction
+  abstract: adverts/michael-ulbrich-advert.pdf
+  video: https://youtu.be/BAogYmSHpoQ
+- date: October 18, 2023
+  speaker: Ronny Bergmann
+  affiliation: Norges teknisk-naturvitenskapelige universitet (NTNU)
+  title: Nonsmooth, nonconvex Optimization on Riemannian Manifolds
+  abstract: adverts/ronny-bergmann-advert.pdf
+  video: https://youtu.be/x0MTTWkITyc
+- date: October 25, 2023
+  speaker: Peng Chen
+  affiliation: Georgia Institute of Technology
+  title: Derivative-Informed Neural Operator for PDE-Constrained Optimization under Uncertainty
+  abstract: adverts/peng-chen-advert.pdf
+  video: https://youtu.be/xzySdQdTFu4
+- date: November 2, 2023
+  speaker: Shawn W. Walker
+  affiliation: Louisiana State University
+  title: Controlling defects in the Landau–de Gennes model of nematic liquid crystals
+  abstract: adverts/shawn-w-walker-advert.pdf
+  video: https://youtu.be/PbB-FrqTr_M
+- date: November 8, 2023
+  speaker: Juan Carlos de Los Reyes
+  affiliation: Escuela Politécnica Nacional de Ecuador
+  title: Bilevel learning for inverse problems
+  abstract: adverts/juan-carlos-de-los-reyes-advert.pdf
+  video: https://youtu.be/PSQjP8SRT94
+- date: November 15, 2023
+  speaker: Florian Schäfer
+  affiliation: Georgia Institute of Technology
+  title: 'Solvers, Models, Learners: Toward Statistical Scientific Computing'
+  abstract: adverts/florian-schaefer-advert.pdf
+  video: https://youtu.be/RpdI6I90HmU
+- date: November 22, 2023
+  speaker: Carlos Rautenberg
+  affiliation: George Mason University
+  title: Non-diffusive Variational Problems with Distributional and Weak Gradient Constraints
+  abstract: adverts/carlos-rautenberg-advert.pdf

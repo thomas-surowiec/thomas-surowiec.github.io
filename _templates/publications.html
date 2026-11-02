@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% from "macros.html" import pub %}
+{% block title %}Publications · Thomas M. Surowiec{% endblock %}
+{% block description %}Journal articles, book chapters and preprints by Thomas M. Surowiec, with links to DOIs, arXiv versions and code.{% endblock %}
+{% block content %}
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Publications</p>
+    <h1>Papers and preprints</h1>
+    <p>{{ n_journal }} journal articles, book chapters and conference papers, plus current preprints. See also <a href="{{ site.links.scholar }}">Google Scholar</a> and <a href="{{ site.links.orcid }}">ORCID</a>.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="filters" hidden>
+    <div class="chips" role="group" aria-label="Filter by topic">
+      <button class="chip" type="button" data-topic="all" aria-pressed="true">All</button>
+      {% for key, label in topics.items() %}
+      <button class="chip" type="button" data-topic="{{ key }}" aria-pressed="false">{{ label }}</button>
+      {% endfor %}
+    </div>
+    <input class="search" id="pubsearch" type="search" placeholder="Search titles, co-authors, journals…" aria-label="Search publications">
+    <span class="count" id="pubcount" aria-live="polite"></span>
+  </div>
+
+  <div id="publist">
+    {% for label, items in groups %}
+    <section class="year-group">
+      <h2>{{ label }}</h2>
+      <ul class="pubs">
+        {% for p in items %}{{ pub(p) }}{% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+    <p class="empty" id="pubempty" hidden>No publications match this filter.</p>
+  </div>
+</div>
+
+{% endblock %}

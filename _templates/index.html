@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% from "macros.html" import pub, icon, glyph %}
+{% block title %}Thomas M. Surowiec · Mathematical optimization{% endblock %}
+{% block head %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Thomas M. Surowiec",
+ "jobTitle":"Chief Research Scientist","url":"{{ site.url }}/",
+ "worksFor":{"@type":"Organization","name":"Simula Research Laboratory"},
+ "sameAs":["{{ site.links.scholar }}","{{ site.links.orcid }}","{{ site.links.github }}"]}
+</script>
+{% endblock %}
+{% block content %}
+
+<section class="splash" aria-label="Introduction">
+  <picture class="splash-bg">
+    <source type="image/webp" srcset="assets/img/simula-800.webp 800w, assets/img/simula-1280.webp 1280w" sizes="100vw">
+    <img src="assets/img/simula-1280.jpg" width="1280" height="853" alt="" fetchpriority="high">
+  </picture>
+  <div class="wrap splash-inner">
+    <p class="eyebrow">Mathematical optimization · Oslo</p>
+    <h1>Thomas M. Surowiec</h1>
+    <p class="splash-roles">
+      <span>Chief Research Scientist, Simula Research Laboratory</span>
+      <span>Deputy Centre Director, SURE-AI</span>
+    </p>
+    <ul class="profiles">
+      {% if site.email_user is defined %}<li><a class="btn primary" href="#contact" data-user="{{ site.email_user }}" data-domain="{{ site.email_domain }}">{{ icon('mail') }}<span>Email</span></a></li>{% endif %}
+      <li><a class="btn" href="{{ site.cv }}">{{ icon('cv') }}<span>CV</span></a></li>
+      <li><a class="btn" href="{{ site.links.scholar }}">{{ icon('scholar') }}<span>Google Scholar</span></a></li>
+      <li><a class="btn" href="{{ site.links.orcid }}">{{ icon('orcid') }}<span>ORCID</span></a></li>
+      <li><a class="btn" href="{{ site.links.github }}">{{ icon('github') }}<span>GitHub</span></a></li>
+      <li><a class="btn" href="{{ site.links.sureai }}">{{ icon('centre') }}<span>SURE-AI</span></a></li>
+    </ul>
+  </div>
+  <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+  </a>
+  <span class="splash-credit">Simula Research Laboratory, Kristian Augusts gate 23</span>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap split">
+    <div>
+      <div class="prose">
+        <p class="eyebrow">About</p>
+        <h2 style="margin-bottom:1rem">Optimization in infinite dimensions</h2>
+        <p class="lede">I develop theory and algorithms for optimization in function spaces, from risk-averse decision-making under uncertainty to structure-preserving finite element methods, and use them to make engineering and AI systems more reliable.</p>
+        <p>I am Chief Research Scientist in the <a href="{{ site.links.department }}">{{ site.links.department_name }}</a> at Simula Research Laboratory, where I have also served as Acting Head of Department, and Deputy Centre Director of <a href="{{ site.links.sureai }}">SURE-AI</a>, the Norwegian Centre for Sustainable, Risk-Averse and Ethical AI.</p>
+        <p>My research is in the theory and numerical solution of optimization problems governed by partial differential equations and variational inequalities. Recurring themes are nonsmooth and variational analysis in function spaces, optimal control, stochastic optimization in infinite dimensions, and finite element methods that preserve the structure of the underlying problem, such as Proximal Galerkin and the latent variable proximal point method. Applications range from topology optimization and liquid crystals to semiconductors and microfluidics.</p>
+        <p>Before joining Simula in 2022, I was Professor (W2) of Mathematical Optimization at <a href="https://www.uni-marburg.de/en">Philipps-Universität Marburg</a> (2016–2022) and Assistant Professor (W1) of Nonsmooth Optimization and Variational Analysis at <a href="https://www.hu-berlin.de/en">Humboldt-Universität zu Berlin</a> (2014–2016).</p>
+      </div>
+
+      <h3 class="eyebrow" style="margin-top:2.6rem">Highlights</h3>
+      <ul class="highlights">
+        {% for h in site.highlights %}
+        <li><span class="date">{{ h.date }}</span><span>{{ h.text }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <aside class="facts" id="contact">
+      <div class="portrait">
+        <picture>
+          <source type="image/webp" srcset="assets/img/portrait-480.webp 480w, assets/img/portrait-960.webp 960w" sizes="220px">
+          <img src="assets/img/portrait-480.png" width="480" height="480" alt="Portrait of Thomas M. Surowiec" loading="lazy">
+        </picture>
+      </div>
+      <h3>Contact</h3>
+      <dl>
+        {% if site.email_user is defined %}
+        <dt>Email</dt>
+        <dd><a href="#contact" data-user="{{ site.email_user }}" data-domain="{{ site.email_domain }}"><span data-email-label>{{ site.email_user }} [at] {{ site.email_domain }}</span></a></dd>
+        {% endif %}
+        <dt>Address</dt>
+        <dd>Simula Research Laboratory<br>Kristian Augusts gate 23<br>0164 Oslo, Norway</dd>
+      </dl>
+      <h3>Career</h3>
+      <dl>
+        {% for c in site.career %}
+        <dt>{{ c.org }}</dt>
+        <dd>{% for r in c.roles %}{{ r.title }} <span class="years">· {{ r.years }}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}</dd>
+        {% endfor %}
+      </dl>
+      <h3>Honors</h3>
+      <dl>
+        {% for h in site.honors %}
+        <dt>{{ h.name }} <span class="years">· {{ h.year }}</span></dt><dd>{{ h.text }}</dd>
+        {% endfor %}
+      </dl>
+      <h3>Group</h3>
+      <dl>
+        {% for g in site.group %}
+        <dt>{{ g.role }}</dt><dd>{{ g.names }}</dd>
+        {% endfor %}
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="themes">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Research themes</h2>
+      <a href="research.html">More on my research →</a>
+    </div>
+    <div class="themes">
+      {% for t in themes %}
+      <a class="theme" href="research.html#{{ t.id }}">
+        {{ glyph(t.id) }}
+        <h3>{{ t.title }}</h3>
+        <p>{{ t.blurb }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="recent">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Recent work</h2>
+      <a href="publications.html">All publications →</a>
+    </div>
+    <ul class="pubs prose" style="max-width:none">
+      {% for p in recent %}{{ pub(p) }}{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="seminar">
+  <div class="wrap split">
+    <div class="prose">
+      <h2 style="margin-bottom:1rem">Optimization in Oslo seminar</h2>
+      <p>I founded and organize the OiO seminar, which from 2022 to 2023 brought {{ talks|length }} international speakers in continuous optimization, optimal control and scientific machine learning to Oslo. The series is currently on hiatus; recordings of most talks remain available.</p>
+      <p><a href="seminar.html">Browse the talk archive →</a></p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

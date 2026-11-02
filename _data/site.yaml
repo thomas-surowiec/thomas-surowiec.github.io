@@ -1,0 +1,140 @@
+# Site-wide settings. Edit, then run:  python3 tools/build.py
+
+name: Thomas M. Surowiec
+url: https://thomas-surowiec.github.io
+description: >-
+  Thomas M. Surowiec is Chief Research Scientist at Simula Research Laboratory and Deputy Centre
+  Director of SURE-AI. He works on theory and algorithms for optimization in function spaces.
+
+# The e-mail address is split in two so it never appears as plain text in the HTML.
+# To remove the address from the site entirely, delete these two lines.
+email_user: thomasms
+email_domain: simula.no
+
+# Replace research/surowiec-cv.pdf with a new PDF of the same name to update the CV.
+cv: research/surowiec-cv.pdf
+
+links:
+  scholar: https://scholar.google.com/citations?user=zwbez4wAAAAJ&hl=en
+  orcid: https://orcid.org/0000-0003-2473-4984
+  github: https://github.com/thomas-surowiec
+  sureai: https://www.sure-ai.no/
+  department: https://www.simula.no/research/projects/department-numerical-analysis-and-scientific-computing
+  department_name: Department of Scientific Computing and Numerical Analysis
+  youtube: https://www.youtube.com/channel/UC3bFQGjRKoTbJJkEaWXzgNg
+
+nav:
+  - {label: Home, href: index.html}
+  - {label: Research, href: research.html}
+  - {label: Publications, href: publications.html}
+  - {label: OiO Seminar, href: seminar.html}
+  - {label: CV, href: research/surowiec-cv.pdf}
+
+# Labels for the topic filter on the publications page (keys are used in publications.yaml)
+topics:
+  risk: Risk & uncertainty
+  numerics: Numerical methods
+  variational: Variational analysis & control
+  games: Games & equilibria
+  ai: Learning & AI
+  interdisciplinary: Interdisciplinary
+
+# Research themes (home-page cards and research page).
+# "papers" lists DOIs or arXiv IDs from publications.yaml, in display order.
+themes:
+  - id: risk
+    title: Optimization under uncertainty and risk
+    blurb: Risk-averse PDE-constrained optimization, stability and sample-based approximation in infinite dimensions.
+    text:
+      - >-
+        Design and control problems for physical systems are typically posed with uncertain data. Optimizing an
+        expected value is often not enough: one needs to control the tail of the distribution of outcomes.
+        I work on the analytical foundations of risk-averse PDE-constrained optimization, including existence,
+        optimality conditions and stability with respect to the underlying probability law. I also develop
+        algorithms that remain efficient in infinite dimensions.
+      - >-
+        Examples include the epi-regularization of risk measures, primal–dual and interior-point methods for
+        risk minimization, and the asymptotic analysis of Monte Carlo (sample average) approximations, much of it
+        in long-standing collaboration with Drew P. Kouri (Sandia National Laboratories).
+    papers: [10.1137/140954556, 10.1137/16M1086613, 10.1287/moor.2019.1013, 10.1007/s10107-020-01608-9, 10.1287/moor.2022.0200, 10.1007/s00211-024-01436-5, 10.1051/cocv/2025045]
+
+  - id: numerics
+    title: Structure-preserving numerical methods
+    blurb: Proximal Galerkin, the latent variable proximal point method and SiMPL for topology optimization.
+    text:
+      - >-
+        Pointwise bounds, obstacles and other inequality constraints appear throughout mechanics, physics and
+        design. Proximal Galerkin and the latent variable proximal point (LVPP) method, developed with
+        Brendan Keith and coauthors, enforce such constraints exactly at the discrete level by working with a
+        latent variable inside a Bregman proximal point iteration. The result is a family of finite element
+        solvers whose iteration counts are largely insensitive to mesh refinement.
+      - >-
+        The same ideas underlie SiMPL, a simple first-order method for density-based topology optimization, and
+        recent extensions to phase-field fracture and multi-material design. Proximal Galerkin received the
+        2025 Langtangen Prize. The methods are implemented in FEniCS, Firedrake and MFEM.
+    aside:
+      - heading: Funding
+        items:
+          - {name: "LaVa (2026–2029)", text: "The Latent Variable Proximal Point Method. Research Council of Norway, FRIPRO. Principal Investigator."}
+          - {name: "PRAGMA (2027–2029)", text: "The Proximal Galerkin Method: Adaptivity and Preconditioning. Research Council of Norway. Principal Investigator."}
+      - heading: Software
+        items:
+          - {name: proximal-galerkin-examples, href: "https://github.com/thomas-surowiec/proximal-galerkin-examples", text: Example implementations accompanying the Proximal Galerkin paper.}
+          - {name: METHODS-Group/ProximalGalerkin, href: "https://github.com/METHODS-Group/ProximalGalerkin", text: Code accompanying the latent variable proximal point paper.}
+    papers: [10.1007/s10208-024-09681-8, 10.1016/j.cma.2025.118181, 10.1137/24M1708863, 10.1007/s00158-025-04008-9, "2604.26210", "2605.11994"]
+
+  - id: variational
+    title: Variational analysis and optimal control
+    blurb: Optimal control of variational inequalities, MPECs and equilibrium problems in function space.
+    text:
+      - >-
+        Many control and design problems have a nonsmooth structure: the state is defined by a variational
+        inequality, a complementarity system or the solution of a lower-level optimization problem. I use tools
+        from variational analysis, such as generalized derivatives, coderivatives and directional differentiability,
+        to derive stationarity conditions for such problems in function spaces and to design solution algorithms.
+      - >-
+        A related strand concerns generalized Nash equilibrium problems with PDE constraints, including
+        risk-neutral and mean-field formulations.
+    papers: [10.1137/100802396, 10.1007/s10107-013-0704-6, 10.1137/14096829X, 10.1007/s10107-016-0983-9, 10.1007/s11228-017-0408-9, 10.1137/22M1506158, 10.1137/22M1489952]
+
+  - id: ai
+    title: Optimization for trustworthy AI
+    blurb: Risk measures and robust optimization as tools for reliable learning and inference.
+    text:
+      - >-
+        At SURE-AI, the Norwegian Centre for Sustainable, Risk-Averse and Ethical AI, I lead the work package on
+        optimization in AI. The aim is to bring the mathematics of risk-averse optimization to bear on learning
+        systems: risk-aware and explainable inference, the stability of statistical estimators, and
+        energy-efficient algorithms with guarantees.
+    aside:
+      - heading: Centre
+        items:
+          - {name: SURE-AI, href: "https://www.sure-ai.no/", text: "Norwegian Centre for Sustainable, Risk-Averse and Ethical AI (2025–2030). Deputy Centre Director; leader of Work Package 5, Optimization in AI."}
+    papers: [10.1007/s10287-026-00572-7, 10.1101/2025.09.25.678504]
+
+# ---------------------------------------------------------------------------
+# Home page: short dated highlights (newest first). Keep to about 6 items.
+highlights:
+  - {date: "2027", text: "Plenary lecture at ENUMATH 2027 (upcoming)."}
+  - {date: "2026", text: "Paper on exponential map models for neural spatial representations accepted at NeurIPS 2026."}
+  - {date: "2026", text: "Research Council of Norway grant PRAGMA (2027–2029) on adaptivity and preconditioning for Proximal Galerkin, funding a two-year stay of L. Zikatanov (Penn State) at Simula."}
+  - {date: "2026", text: "LaVa, a FRIPRO grant on the latent variable proximal point method, starts (Research Council of Norway, 2026–2029)."}
+  - {date: "2025", text: "Langtangen Prize, with B. Keith, for “Proximal Galerkin” (Found. Comput. Math.)."}
+  - {date: "2025", text: "J. T. Oden Faculty Fellow at the Oden Institute, The University of Texas at Austin; plenary lecture at PGMODAYS 2025, Paris-Saclay."}
+
+honors:
+  - {year: "2025", name: Langtangen Prize, text: "with B. Keith, for “Proximal Galerkin”"}
+  - {year: "2025", name: J. T. Oden Faculty Fellowship, text: "Oden Institute, UT Austin"}
+  - {year: "2020", name: Charles Broyden Prize, text: "with P. E. Farrell and M. Croci, best paper in Optimization Methods and Software"}
+
+career:
+  - {org: Simula Research Laboratory, roles: [{title: Chief Research Scientist, years: since 2022}, {title: Acting Head of Department, years: "2024–25, 2026–"}]}
+  - {org: SURE-AI, roles: [{title: Deputy Centre Director, years: since 2025}]}
+  - {org: Brown University, roles: [{title: Visiting Scholar, years: since 2023}]}
+  - {org: Philipps-Universität Marburg, roles: [{title: Professor (W2), years: 2016–2022}]}
+  - {org: Humboldt-Universität zu Berlin, roles: [{title: Assistant Professor (W1), years: 2014–2016}, {title: Postdoc, years: 2009–2014}]}
+  - {org: Education, roles: [{title: "Ph.D. Mathematics, HU Berlin", years: "2010"}, {title: "M.S. & B.S., Stevens Institute of Technology", years: "2006, 2004"}]}
+
+group:
+  - {role: Postdocs, names: "H. Jasa, U. Zerbinati"}
+  - {role: PhD students, names: "J. E. Espinoza Grijalva, D. A. Molina Bakhos"}

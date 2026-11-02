@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Thomas M. Surowiec</title>
+<meta name="description" content="Research themes of Thomas M. Surowiec: risk-averse optimization under uncertainty, structure-preserving finite element methods, variational analysis and optimal control, and optimization for trustworthy AI.">
+<meta name="author" content="Thomas M. Surowiec">
+<link rel="canonical" href="https://thomas-surowiec.github.io/research.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Research · Thomas M. Surowiec">
+<meta property="og:description" content="Research themes of Thomas M. Surowiec: risk-averse optimization under uncertainty, structure-preserving finite element methods, variational analysis and optimal control, and optimization for trustworthy AI.">
+<meta property="og:url" content="https://thomas-surowiec.github.io/research.html">
+<meta property="og:image" content="https://thomas-surowiec.github.io/assets/img/portrait-960.webp">
+<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121417" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/stix-two-text-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css?v=20261102">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Thomas M. Surowiec</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="seminar.html">OiO Seminar</a></li>
+        <li><a href="research/surowiec-cv.pdf">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="content">
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Research</p>
+    <h1>Theory and algorithms for optimization in function spaces</h1>
+    <p>My work combines functional and variational analysis, PDE theory and probability with the design and analysis of numerical methods. Four threads run through it.</p>
+  </div>
+</header>
+<section class="section" id="risk">
+  <div class="wrap split">
+    <div>
+      <div class="prose">
+        <svg class="glyph" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 40h40"/><path d="M5 40c6 0 8-26 15-26s9 18 15 22c3 2 6 3 9 4"/>
+  <path d="M33 36v4M36 37.4V40M39 38.6V40" stroke-width="1.6"/><path d="M31 18v22" stroke-dasharray="2 3"/></svg>
+        <h2 style="margin:.6rem 0 1rem">Optimization under uncertainty and risk</h2>
+<p>Design and control problems for physical systems are typically posed with uncertain data. Optimizing an expected value is often not enough: one needs to control the tail of the distribution of outcomes. I work on the analytical foundations of risk-averse PDE-constrained optimization, including existence, optimality conditions and stability with respect to the underlying probability law. I also develop algorithms that remain efficient in infinite dimensions.</p><p>Examples include the epi-regularization of risk measures, primal–dual and interior-point methods for risk minimization, and the asymptotic analysis of Monte Carlo (sample average) approximations, much of it in long-standing collaboration with Drew P. Kouri (Sandia National Laboratories).</p>      </div>
+      <h3 class="eyebrow" style="margin-top:2rem">Selected papers</h3>
+      <ul class="pubs">
+<li class="pub" data-topics="risk">
+  <span class="title">Risk-averse PDE-constrained optimization using the conditional value-at-risk</span>
+  <span class="authors">D. P. Kouri and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>SIAM Journal on Optimization</em>, Vol. 26, No. 1, pp. 365–396 (2016)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1137/140954556" rel="noopener">DOI</a>  </span>
+</li><li class="pub" data-topics="risk variational">
+  <span class="title">Existence and optimality conditions for risk-averse PDE-constrained optimization</span>
+  <span class="authors">D. P. Kouri and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>SIAM/ASA Journal on Uncertainty Quantification</em>, Vol. 6, No. 2, pp. 787–815 (2018)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1137/16M1086613" rel="noopener">DOI</a>  </span>
+</li><li class="pub" data-topics="risk variational">
+  <span class="title">Epi-regularization of risk measures</span>
+  <span class="authors">D. P. Kouri and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Mathematics of Operations Research</em>, Vol. 45, No. 2, pp. 774–795 (2020)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1287/moor.2019.1013" rel="noopener">DOI</a>  </span>
+</li><li class="pub" data-topics="risk">
+  <span class="title">A primal–dual algorithm for risk minimization</span>
+  <span class="authors">D. P. Kouri and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Mathematical Programming</em>, Vol. 193, No. 1, pp. 337–363 (2022)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1007/s10107-020-01608-9" rel="noopener">DOI</a>  </span>
+</li><li class="pub" data-topics="risk">
+  <span class="title">Asymptotic consistency for nonconvex risk-averse stochastic optimization with infinite-dimensional decision spaces</span>
+  <span class="authors">J. Milz and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Mathematics of Operations Research</em>, Vol. 49, No. 3, pp. 1403–1418 (2024)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1287/moor.2022.0200" rel="noopener">DOI</a><a class="tag" href="https://arxiv.org/abs/2207.14756" rel="noopener">arXiv</a>  </span>
+</li><li class="pub" data-topics="risk">
+  <span class="title">Asymptotic properties of Monte Carlo methods in elliptic PDE-constrained optimization under uncertainty</span>
+  <span class="authors">W. Römisch and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Numerische Mathematik</em>, Vol. 156, No. 5, pp. 1887–1914 (2024)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1007/s00211-024-01436-5" rel="noopener">DOI</a><a class="tag" href="https://arxiv.org/abs/2106.06347" rel="noopener">arXiv</a>  </span>
+</li><li class="pub" data-topics="risk variational">
+  <span class="title">Risk-averse optimal control of random elliptic variational inequalities</span>
+  <span class="authors">A. Alphonse, C. Geiersbach, M. Hintermüller, and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>ESAIM: Control, Optimisation and Calculus of Variations</em>, Vol. 31, Art. 71 (2025)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1051/cocv/2025045" rel="noopener">DOI</a><a class="tag" href="https://arxiv.org/abs/2210.03425" rel="noopener">arXiv</a>  </span>
+</li>      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="numerics">
+  <div class="wrap split">
+    <div>
+      <div class="prose">
+        <svg class="glyph" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 40 24 8l18 32z"/><path d="M15 24h18M24 40 15 24M24 40l9-16M15 24l9-16M33 24 24 8" stroke-width="1.5"/></svg>
+        <h2 style="margin:.6rem 0 1rem">Structure-preserving numerical methods</h2>
+<p>Pointwise bounds, obstacles and other inequality constraints appear throughout mechanics, physics and design. Proximal Galerkin and the latent variable proximal point (LVPP) method, developed with Brendan Keith and coauthors, enforce such constraints exactly at the discrete level by working with a latent variable inside a Bregman proximal point iteration. The result is a family of finite element solvers whose iteration counts are largely insensitive to mesh refinement.</p><p>The same ideas underlie SiMPL, a simple first-order method for density-based topology optimization, and recent extensions to phase-field fracture and multi-material design. Proximal Galerkin received the 2025 Langtangen Prize. The methods are implemented in FEniCS, Firedrake and MFEM.</p>      </div>
+      <h3 class="eyebrow" style="margin-top:2rem">Selected papers</h3>
+      <ul class="pubs">
+<li class="pub" data-topics="numerics variational">
+  <span class="title">Proximal Galerkin: A structure-preserving finite element method for pointwise bound constraints</span>
+  <span class="authors">B. Keith and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Foundations of Computational Mathematics</em>, Vol. 26, No. 1, pp. 385–481 (2026)</span>  <span class="links">
+<span class="tag award">Langtangen Prize 2025</span><a class="tag" href="https://doi.org/10.1007/s10208-024-09681-8" rel="noopener">DOI</a><a class="tag" href="https://arxiv.org/abs/2307.12444" rel="noopener">arXiv</a><a class="tag" href="https://github.com/thomas-surowiec/proximal-galerkin-examples" rel="noopener">Code</a>  </span>
+</li><li class="pub" data-topics="numerics variational">
+  <span class="title">The latent variable proximal point algorithm for variational problems with inequality constraints</span>
+  <span class="authors">J. S. Dokken, P. E. Farrell, B. Keith, I. P. A. Papadopoulos, and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Computer Methods in Applied Mechanics and Engineering</em>, Vol. 445, Art. 118181 (2025)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1016/j.cma.2025.118181" rel="noopener">DOI</a><a class="tag" href="https://arxiv.org/abs/2503.05672" rel="noopener">arXiv</a><a class="tag" href="https://github.com/METHODS-Group/ProximalGalerkin" rel="noopener">Code</a>  </span>
+</li><li class="pub" data-topics="numerics">
+  <span class="title">Analysis of the SiMPL method for density-based topology optimization</span>
+  <span class="authors">B. Keith, D. Kim, B. S. Lazarov, and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>SIAM Journal on Optimization</em>, Vol. 35, No. 2, pp. 1134–1164 (2025)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1137/24M1708863" rel="noopener">DOI</a><a class="tag" href="https://arxiv.org/abs/2409.19341" rel="noopener">arXiv</a>  </span>
+</li><li class="pub" data-topics="numerics">
+  <span class="title">A simple introduction to the SiMPL method for density-based topology optimization</span>
+  <span class="authors">D. Kim, B. S. Lazarov, <strong>T. M. Surowiec</strong>, and B. Keith</span>
+<span class="venue"><em>Structural and Multidisciplinary Optimization</em>, Vol. 68, No. 4, Art. 74 (2025)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1007/s00158-025-04008-9" rel="noopener">DOI</a><a class="tag" href="https://arxiv.org/abs/2411.19421" rel="noopener">arXiv</a>  </span>
+</li><li class="pub" data-topics="numerics">
+  <span class="title">Proximal Galerkin for phase field fracture</span>
+  <span class="authors">M. Castillón, B. Khara, J. S. Dokken, <strong>T. M. Surowiec</strong>, B. Keith, and Y. Bazilevs</span>
+  <span class="links">
+<span class="tag status">Preprint</span><a class="tag" href="https://arxiv.org/abs/2604.26210" rel="noopener">arXiv</a>  </span>
+</li><li class="pub" data-topics="numerics">
+  <span class="title">The SiMPL method for multi-material topology optimization</span>
+  <span class="authors">P. Gangl, B. Keith, D. Kim, B. S. Lazarov, and <strong>T. M. Surowiec</strong></span>
+  <span class="links">
+<span class="tag status">Preprint</span><a class="tag" href="https://arxiv.org/abs/2605.11994" rel="noopener">arXiv</a>  </span>
+</li>      </ul>
+    </div>
+    <aside class="facts">
+      <h3>Funding</h3>
+      <dl>
+<dt>LaVa (2026–2029)</dt><dd>The Latent Variable Proximal Point Method. Research Council of Norway, FRIPRO. Principal Investigator.</dd><dt>PRAGMA (2027–2029)</dt><dd>The Proximal Galerkin Method: Adaptivity and Preconditioning. Research Council of Norway. Principal Investigator.</dd>      </dl>
+      <h3>Software</h3>
+      <dl>
+<dt><a href="https://github.com/thomas-surowiec/proximal-galerkin-examples">proximal-galerkin-examples</a></dt><dd>Example implementations accompanying the Proximal Galerkin paper.</dd><dt><a href="https://github.com/METHODS-Group/ProximalGalerkin">METHODS-Group/ProximalGalerkin</a></dt><dd>Code accompanying the latent variable proximal point paper.</dd>      </dl>
+    </aside>
+  </div>
+</section>
+<section class="section" id="variational">
+  <div class="wrap split">
+    <div>
+      <div class="prose">
+        <svg class="glyph" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 38c0-12 6-26 18-30 8 6 14 18 14 30z"/><path d="M26 8 26 2M26 8l-8-5M26 8l8-5" stroke-width="1.6"/>
+  <circle cx="26" cy="8" r="2" fill="currentColor"/></svg>
+        <h2 style="margin:.6rem 0 1rem">Variational analysis and optimal control</h2>
+<p>Many control and design problems have a nonsmooth structure: the state is defined by a variational inequality, a complementarity system or the solution of a lower-level optimization problem. I use tools from variational analysis, such as generalized derivatives, coderivatives and directional differentiability, to derive stationarity conditions for such problems in function spaces and to design solution algorithms.</p><p>A related strand concerns generalized Nash equilibrium problems with PDE constraints, including risk-neutral and mean-field formulations.</p>      </div>
+      <h3 class="eyebrow" style="margin-top:2rem">Selected papers</h3>
+      <ul class="pubs">
+<li class="pub" data-topics="variational">
+  <span class="title">First-order optimality conditions for elliptic mathematical programs with equilibrium constraints via variational analysis</span>
+  <span class="authors">M. Hintermüller and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>SIAM Journal on Optimization</em>, Vol. 21, No. 4, pp. 1561–1593 (2011)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1137/100802396" rel="noopener">DOI</a>  </span>
+</li><li class="pub" data-topics="variational">
+  <span class="title">Several approaches for the derivation of stationarity conditions for elliptic MPECs with upper-level control constraints</span>
+  <span class="authors">M. Hintermüller, B. S. Mordukhovich, and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Mathematical Programming</em>, Vol. 146, No. 1–2, pp. 555–582 (2014)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1007/s10107-013-0704-6" rel="noopener">DOI</a>  </span>
+</li><li class="pub" data-topics="games variational">
+  <span class="title">Generalized Nash equilibrium problems in Banach spaces: Theory, Nikaido–Isoda-based path-following methods, and applications</span>
+  <span class="authors">M. Hintermüller, <strong>T. M. Surowiec</strong>, and A. Kämmler</span>
+<span class="venue"><em>SIAM Journal on Optimization</em>, Vol. 25, No. 3, pp. 1826–1856 (2015)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1137/14096829X" rel="noopener">DOI</a>  </span>
+</li><li class="pub" data-topics="variational">
+  <span class="title">A bundle-free implicit programming approach for a class of elliptic MPECs in function space</span>
+  <span class="authors">M. Hintermüller and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Mathematical Programming</em>, Vol. 160, No. 1–2, pp. 271–305 (2016)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1007/s10107-016-0983-9" rel="noopener">DOI</a>  </span>
+</li><li class="pub" data-topics="variational">
+  <span class="title">On the directional differentiability of the solution mapping for a class of variational inequalities of the second kind</span>
+  <span class="authors">M. Hintermüller and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Set-Valued and Variational Analysis</em>, Vol. 26, No. 3, pp. 631–642 (2018)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1007/s11228-017-0408-9" rel="noopener">DOI</a>  </span>
+</li><li class="pub" data-topics="variational">
+  <span class="title">Optimal control of the Landau–de Gennes model of nematic liquid crystals</span>
+  <span class="authors"><strong>T. M. Surowiec</strong> and S. W. Walker</span>
+<span class="venue"><em>SIAM Journal on Control and Optimization</em>, Vol. 61, No. 4, pp. 2546–2570 (2023)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1137/22M1506158" rel="noopener">DOI</a><a class="tag" href="https://arxiv.org/abs/2304.06421" rel="noopener">arXiv</a>  </span>
+</li><li class="pub" data-topics="games variational">
+  <span class="title">On a differential generalized Nash equilibrium problem with mean field interaction</span>
+  <span class="authors">M. Hintermüller, M. Theiß, and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>SIAM Journal on Optimization</em>, Vol. 34, No. 3, pp. 2005–2030 (2024)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1137/22M1489952" rel="noopener">DOI</a>  </span>
+</li>      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="ai">
+  <div class="wrap split">
+    <div>
+      <div class="prose">
+        <svg class="glyph" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="14" r="3"/><circle cx="8" cy="34" r="3"/><circle cx="24" cy="10" r="3"/><circle cx="24" cy="24" r="3"/><circle cx="24" cy="38" r="3"/><circle cx="40" cy="24" r="3"/>
+  <path d="M11 14h10M11 15l10 8M11 33l10-8M11 34l10 3M27 11l10 11M27 24h10M27 37l10-11" stroke-width="1.4"/></svg>
+        <h2 style="margin:.6rem 0 1rem">Optimization for trustworthy AI</h2>
+<p>At SURE-AI, the Norwegian Centre for Sustainable, Risk-Averse and Ethical AI, I lead the work package on optimization in AI. The aim is to bring the mathematics of risk-averse optimization to bear on learning systems: risk-aware and explainable inference, the stability of statistical estimators, and energy-efficient algorithms with guarantees.</p>      </div>
+      <h3 class="eyebrow" style="margin-top:2rem">Selected papers</h3>
+      <ul class="pubs">
+<li class="pub" data-topics="risk ai">
+  <span class="title">Inference as risk identification</span>
+  <span class="authors">A. S. Javeed, D. P. Kouri, and <strong>T. M. Surowiec</strong></span>
+<span class="venue"><em>Computational Management Science</em>, Vol. 23, No. 2, Art. 34 (2026)</span>  <span class="links">
+<a class="tag" href="https://doi.org/10.1007/s10287-026-00572-7" rel="noopener">DOI</a><a class="tag" href="https://arxiv.org/abs/2310.17376" rel="noopener">arXiv</a>  </span>
+</li><li class="pub" data-topics="ai interdisciplinary">
+  <span class="title">Exponential map models as an interpretable framework for generating neural spatial representations</span>
+  <span class="authors">M. Pettersen, N. Haug, J. Bergli, <strong>T. M. Surowiec</strong>, and M. E. Lepperød</span>
+<span class="venue"><em>Advances in Neural Information Processing Systems (NeurIPS 2026)</em>, to appear (2026)</span>  <span class="links">
+<span class="tag status">Conference</span><a class="tag" href="https://doi.org/10.1101/2025.09.25.678504" rel="noopener">DOI</a>  </span>
+<span class="note">Link is to the bioRxiv preprint</span></li>      </ul>
+    </div>
+    <aside class="facts">
+      <h3>Centre</h3>
+      <dl>
+<dt><a href="https://www.sure-ai.no/">SURE-AI</a></dt><dd>Norwegian Centre for Sustainable, Risk-Averse and Ethical AI (2025–2030). Deputy Centre Director; leader of Work Package 5, Optimization in AI.</dd>      </dl>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Thomas M. Surowiec · Simula Research Laboratory, Oslo</span>
+    <span>Last updated November 2026</span>
+  </div>
+</footer>
+<script src="assets/js/site.js?v=20261102" defer></script>
+</body>
+</html>

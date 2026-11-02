@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% from "macros.html" import icon %}
+{% block title %}OiO Seminar · Thomas M. Surowiec{% endblock %}
+{% block description %}Archive of the Optimization in Oslo (OiO) seminar, 2022–2023: speakers, abstracts and recordings.{% endblock %}
+{% block content %}
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Optimization in Oslo</p>
+    <h1>OiO seminar archive</h1>
+    <p>A research seminar featuring international speakers in optimization under uncertainty, PDE-constrained optimization, optimal control of complex systems, uncertainty quantification and scientific machine learning, with applications from imaging to materials science. Talks were 50 minutes plus discussion, open to students, postdocs and everyone interested in continuous optimization in Oslo.</p>
+  </div>
+</header>
+
+<div class="wrap"><div style="padding:2rem 0 4rem">
+  <p class="notice"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" style="flex:none;margin-top:1px;color:var(--accent)" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+    <span>The seminar is currently on hiatus. Recordings of past talks are on the <a href="{{ site.links.youtube }}">OiO YouTube channel</a>; click a title for the speaker’s abstract and bio.</span></p>
+
+  {% for year, items in talk_groups %}
+  <section class="year-group">
+    <h2>{{ year }}</h2>
+    <ul class="talks">
+      {% for t in items %}
+      <li class="talk">
+        <span class="date">{{ t.short_date }}</span>
+        <div>
+          <div class="t">{% if t.abstract %}<a href="{{ t.abstract }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</div>
+          <div class="who"><strong>{{ t.speaker }}</strong> · {{ t.affiliation }}</div>
+        </div>
+        <span class="acts">
+          {% if t.video %}<a class="tag" href="{{ t.video }}" rel="noopener">Video</a>{% endif %}
+          {% if t.abstract %}<a class="tag" href="{{ t.abstract }}">Abstract</a>{% endif %}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div></div>
+
+{% endblock %}

@@ -1,0 +1,522 @@
+# ---------------------------------------------------------------------------
+# Publication list. Edit this file, then run:  python3 tools/build.py
+#
+# Fields (only title/authors/year/kind are required):
+#   kind:    journal | conference | preprint | chapter | other
+#   award:   optional prize line shown with the entry
+#   year:    year of the issue (preprints: year posted)
+#   authors: names as they should appear; "T. M. Surowiec" is bolded automatically
+#   title:   may contain simple HTML, e.g. <i>H</i><sup>1</sup>
+#   venue:   journal / book / status line
+#   details: volume, pages, article number ...
+#   topics:  any of  risk | numerics | variational | games | ai | interdisciplinary
+#   links:   any of  doi | arxiv | pdf | code | url  (arxiv = bare ID, doi = bare DOI)
+#   note:    short extra remark shown in grey
+# Entries can be in any order; the build script sorts by year (newest first).
+# ---------------------------------------------------------------------------
+
+# ----- Preprints ------------------------------------------------------------
+- kind: preprint
+  year: 2026
+  authors: P. Gangl, B. Keith, D. Kim, B. S. Lazarov, and T. M. Surowiec
+  title: The SiMPL method for multi-material topology optimization
+  topics: [numerics]
+  links: {arxiv: "2605.11994"}
+
+- kind: preprint
+  year: 2026
+  authors: A. Scagliotti and T. M. Surowiec
+  title: Risk-averse ensemble control for control-affine systems
+  topics: [risk, variational]
+  links: {arxiv: "2605.02791"}
+
+- kind: preprint
+  year: 2026
+  authors: M. Castillón, B. Khara, J. S. Dokken, T. M. Surowiec, B. Keith, and Y. Bazilevs
+  title: Proximal Galerkin for phase field fracture
+  topics: [numerics]
+  links: {arxiv: "2604.26210"}
+
+- kind: conference
+  year: 2026
+  authors: M. Pettersen, N. Haug, J. Bergli, T. M. Surowiec, and M. E. Lepperød
+  title: Exponential map models as an interpretable framework for generating neural spatial representations
+  venue: Advances in Neural Information Processing Systems (NeurIPS 2026)
+  details: to appear
+  topics: [ai, interdisciplinary]
+  links: {doi: "10.1101/2025.09.25.678504"}
+  note: Link is to the bioRxiv preprint
+
+# ----- 2026 -----------------------------------------------------------------
+- kind: journal
+  year: 2026
+  authors: A. S. Javeed, D. P. Kouri, and T. M. Surowiec
+  title: Inference as risk identification
+  venue: Computational Management Science
+  details: Vol. 23, No. 2, Art. 34
+  topics: [risk, ai]
+  links: {doi: "10.1007/s10287-026-00572-7", arxiv: "2310.17376"}
+
+- kind: journal
+  year: 2026
+  authors: B. Keith and T. M. Surowiec
+  title: "Proximal Galerkin: A structure-preserving finite element method for pointwise bound constraints"
+  venue: Foundations of Computational Mathematics
+  details: Vol. 26, No. 1, pp. 385–481
+  topics: [numerics, variational]
+  award: Langtangen Prize 2025
+  links: {doi: "10.1007/s10208-024-09681-8", arxiv: "2307.12444", code: "https://github.com/thomas-surowiec/proximal-galerkin-examples"}
+
+# ----- 2025 -----------------------------------------------------------------
+- kind: journal
+  year: 2025
+  authors: A. Alphonse, C. Geiersbach, M. Hintermüller, and T. M. Surowiec
+  title: Risk-averse optimal control of random elliptic variational inequalities
+  venue: "ESAIM: Control, Optimisation and Calculus of Variations"
+  details: Vol. 31, Art. 71
+  topics: [risk, variational]
+  links: {doi: "10.1051/cocv/2025045", arxiv: "2210.03425"}
+
+- kind: journal
+  year: 2025
+  authors: J. S. Dokken, P. E. Farrell, B. Keith, I. P. A. Papadopoulos, and T. M. Surowiec
+  title: The latent variable proximal point algorithm for variational problems with inequality constraints
+  venue: Computer Methods in Applied Mechanics and Engineering
+  details: Vol. 445, Art. 118181
+  topics: [numerics, variational]
+  links: {doi: "10.1016/j.cma.2025.118181", arxiv: "2503.05672", code: "https://github.com/METHODS-Group/ProximalGalerkin"}
+
+- kind: journal
+  year: 2025
+  authors: B. Keith, D. Kim, B. S. Lazarov, and T. M. Surowiec
+  title: Analysis of the SiMPL method for density-based topology optimization
+  venue: SIAM Journal on Optimization
+  details: Vol. 35, No. 2, pp. 1134–1164
+  topics: [numerics]
+  links: {doi: "10.1137/24M1708863", arxiv: "2409.19341"}
+
+- kind: journal
+  year: 2025
+  authors: D. Kim, B. S. Lazarov, T. M. Surowiec, and B. Keith
+  title: A simple introduction to the SiMPL method for density-based topology optimization
+  venue: Structural and Multidisciplinary Optimization
+  details: Vol. 68, No. 4, Art. 74
+  topics: [numerics]
+  links: {doi: "10.1007/s00158-025-04008-9", arxiv: "2411.19421"}
+
+# ----- 2024 -----------------------------------------------------------------
+- kind: journal
+  year: 2024
+  authors: M. Hintermüller, M. Theiß, and T. M. Surowiec
+  title: On a differential generalized Nash equilibrium problem with mean field interaction
+  venue: SIAM Journal on Optimization
+  details: Vol. 34, No. 3, pp. 2005–2030
+  topics: [games, variational]
+  links: {doi: "10.1137/22M1489952"}
+
+- kind: journal
+  year: 2024
+  authors: W. Römisch and T. M. Surowiec
+  title: Asymptotic properties of Monte Carlo methods in elliptic PDE-constrained optimization under uncertainty
+  venue: Numerische Mathematik
+  details: Vol. 156, No. 5, pp. 1887–1914
+  topics: [risk]
+  links: {doi: "10.1007/s00211-024-01436-5", arxiv: "2106.06347"}
+
+- kind: journal
+  year: 2024
+  authors: J. Milz and T. M. Surowiec
+  title: Asymptotic consistency for nonconvex risk-averse stochastic optimization with infinite-dimensional decision spaces
+  venue: Mathematics of Operations Research
+  details: Vol. 49, No. 3, pp. 1403–1418
+  topics: [risk]
+  links: {doi: "10.1287/moor.2022.0200", arxiv: "2207.14756"}
+
+# ----- 2023 -----------------------------------------------------------------
+- kind: journal
+  year: 2023
+  authors: P. Manns and T. M. Surowiec
+  title: "On binary optimal control in <i>H<sup>s</sup></i>(0,<i>T</i>), <i>s</i> &lt; 1/2"
+  venue: Comptes Rendus. Mathématique
+  details: Vol. 361, pp. 1531–1540
+  topics: [variational]
+  links: {doi: "10.5802/crmath.507"}
+
+- kind: journal
+  year: 2023
+  authors: T. M. Surowiec and S. W. Walker
+  title: Optimal control of the Landau–de Gennes model of nematic liquid crystals
+  venue: SIAM Journal on Control and Optimization
+  details: Vol. 61, No. 4, pp. 2546–2570
+  topics: [variational]
+  links: {doi: "10.1137/22M1506158", arxiv: "2304.06421"}
+
+- kind: journal
+  year: 2023
+  authors: M. Hashemi, R. Herzog, and T. M. Surowiec
+  title: Optimal control of the stationary Kirchhoff equation
+  venue: Computational Optimization and Applications
+  details: Vol. 85, No. 2, pp. 479–508
+  topics: [variational]
+  links: {doi: "10.1007/s10589-023-00463-6", arxiv: "2112.01067"}
+
+- kind: journal
+  year: 2023
+  authors: D. P. Kouri, M. Staudigl, and T. M. Surowiec
+  title: A relaxation-based probabilistic approach for PDE-constrained optimization under uncertainty with pointwise state constraints
+  venue: Computational Optimization and Applications
+  details: Vol. 85, No. 2, pp. 441–478
+  topics: [risk]
+  links: {doi: "10.1007/s10589-023-00461-8", pdf: "research/DPKouri_MStaudigl_TMSurowiec_2023.pdf"}
+  note: PDF is the accepted version
+
+- kind: journal
+  year: 2023
+  authors: D. B. Gahururu, M. Hintermüller, and T. M. Surowiec
+  title: Risk-neutral PDE-constrained generalized Nash equilibrium problems
+  venue: Mathematical Programming
+  details: Vol. 199, No. 2, pp. 1287–1337
+  topics: [games, risk]
+  links: {doi: "10.1007/s10107-022-01800-z"}
+
+# ----- 2022 -----------------------------------------------------------------
+- kind: journal
+  year: 2022
+  authors: S. Dahlke, H. Harbrecht, and T. M. Surowiec
+  title: A wavelet-based approach for the simulation and optimal control of non-local operator equations
+  venue: SIAM Journal on Scientific Computing
+  details: Vol. 44, No. 4, pp. A2691–A2708
+  topics: [numerics]
+  links: {doi: "10.1137/20M1350790"}
+
+- kind: journal
+  year: 2022
+  authors: D. P. Kouri and T. M. Surowiec
+  title: A primal–dual algorithm for risk minimization
+  venue: Mathematical Programming
+  details: Vol. 193, No. 1, pp. 337–363
+  topics: [risk]
+  links: {doi: "10.1007/s10107-020-01608-9"}
+
+- kind: journal
+  year: 2022
+  authors: S. Dahlke and T. M. Surowiec
+  title: Wavelet-based approximations of pointwise bound constraints in Lebesgue and Sobolev spaces
+  venue: IMA Journal of Numerical Analysis
+  details: Vol. 42, No. 1, pp. 417–439
+  topics: [numerics]
+  links: {doi: "10.1093/imanum/draa066"}
+
+- kind: journal
+  year: 2022
+  authors: D. P. Kouri and T. M. Surowiec
+  title: "Corrigendum: “Existence and optimality conditions for risk-averse PDE-constrained optimization”"
+  venue: SIAM/ASA Journal on Uncertainty Quantification
+  topics: [risk]
+  links: {doi: "10.1137/21M143251X"}
+
+# ----- 2021 -----------------------------------------------------------------
+- kind: journal
+  year: 2021
+  authors: M. Hintermüller, S.-M. Stengl, and T. M. Surowiec
+  title: Uncertainty quantification in image segmentation using the Ambrosio–Tortorelli approximation of the Mumford–Shah energy
+  venue: Journal of Mathematical Imaging and Vision
+  details: Vol. 63, pp. 1095–1117
+  topics: [risk, variational]
+  links: {doi: "10.1007/s10851-021-01034-2"}
+
+- kind: journal
+  year: 2021
+  authors: P. E. Farrell, I. P. A. Papadopoulos, and T. M. Surowiec
+  title: Computing multiple solutions of topology optimization problems
+  venue: SIAM Journal on Scientific Computing
+  details: Vol. 43, No. 3, pp. A1555–A1582
+  topics: [numerics]
+  links: {doi: "10.1137/20M1326209", arxiv: "2004.11797"}
+
+- kind: journal
+  year: 2021
+  authors: M. Hoffhues, W. Römisch, and T. M. Surowiec
+  title: On quantitative stability in infinite-dimensional optimization under uncertainty
+  venue: Optimization Letters
+  details: Vol. 15, pp. 2733–2756
+  topics: [risk, variational]
+  links: {doi: "10.1007/s11590-021-01707-2"}
+
+- kind: journal
+  year: 2021
+  authors: S. Garreis, T. M. Surowiec, and M. Ulbrich
+  title: An interior-point approach for solving risk-averse PDE-constrained optimization problems with coherent risk measures
+  venue: SIAM Journal on Optimization
+  details: Vol. 31, No. 1, pp. 1–29
+  topics: [risk, numerics]
+  links: {doi: "10.1137/19M125039X"}
+
+# ----- 2020 -----------------------------------------------------------------
+- kind: journal
+  year: 2020
+  authors: D. P. Kouri and T. M. Surowiec
+  title: Risk-averse optimal control of semilinear elliptic PDEs
+  venue: "ESAIM: Control, Optimisation and Calculus of Variations"
+  details: Vol. 26, Art. 53
+  topics: [risk, variational]
+  links: {doi: "10.1051/cocv/2019061"}
+
+- kind: journal
+  year: 2020
+  authors: D. P. Kouri and T. M. Surowiec
+  title: Epi-regularization of risk measures
+  venue: Mathematics of Operations Research
+  details: Vol. 45, No. 2, pp. 774–795
+  topics: [risk, variational]
+  links: {doi: "10.1287/moor.2019.1013"}
+
+- kind: journal
+  year: 2020
+  authors: P. E. Farrell, M. Croci, and T. M. Surowiec
+  title: Deflation for semismooth equations
+  venue: Optimization Methods and Software
+  details: Vol. 35, No. 6, pp. 1248–1271
+  topics: [numerics, variational]
+  award: Charles Broyden Prize 2020
+  links: {doi: "10.1080/10556788.2019.1613655", arxiv: "1904.13299"}
+
+# ----- 2019 -----------------------------------------------------------------
+- kind: journal
+  year: 2019
+  authors: L. Adam, M. Hintermüller, D. Peschka, and T. M. Surowiec
+  title: Optimization of a multiphysics problem in semiconductor laser design
+  venue: SIAM Journal on Applied Mathematics
+  details: Vol. 79, No. 1, pp. 257–283
+  topics: [interdisciplinary]
+  links: {doi: "10.1137/18M1179183"}
+
+- kind: journal
+  year: 2019
+  authors: L. Adam, M. Hintermüller, and T. M. Surowiec
+  title: "A semismooth Newton method with analytical path-following for the <i>H</i><sup>1</sup>-projection onto the Gibbs simplex"
+  venue: IMA Journal of Numerical Analysis
+  details: Vol. 39, No. 3, pp. 1276–1295
+  topics: [numerics, variational]
+  links: {doi: "10.1093/imanum/dry034"}
+
+# ----- 2018 -----------------------------------------------------------------
+- kind: journal
+  year: 2018
+  authors: L. Adam, M. Hintermüller, and T. M. Surowiec
+  title: A PDE-constrained optimization approach for topology optimization of strained photonic devices
+  venue: Optimization and Engineering
+  details: Vol. 19, No. 3, pp. 521–557
+  topics: [interdisciplinary]
+  links: {doi: "10.1007/s11081-018-9394-5"}
+
+- kind: chapter
+  year: 2018
+  authors: T. M. Surowiec
+  title: Numerical optimization methods for the optimal control of elliptic variational inequalities
+  venue: "In: H. Antil, D. P. Kouri, M.-D. Lacasse, D. Ridzal (eds.), Frontiers in PDE-Constrained Optimization"
+  details: The IMA Volumes in Mathematics and its Applications, Vol. 163, Springer
+  topics: [variational, numerics]
+  links: {doi: "10.1007/978-1-4939-8636-1_4"}
+
+- kind: journal
+  year: 2018
+  authors: D. P. Kouri and T. M. Surowiec
+  title: Existence and optimality conditions for risk-averse PDE-constrained optimization
+  venue: SIAM/ASA Journal on Uncertainty Quantification
+  details: Vol. 6, No. 2, pp. 787–815
+  topics: [risk, variational]
+  links: {doi: "10.1137/16M1086613"}
+
+- kind: journal
+  year: 2018
+  authors: M. Hintermüller and T. M. Surowiec
+  title: On the directional differentiability of the solution mapping for a class of variational inequalities of the second kind
+  venue: Set-Valued and Variational Analysis
+  details: Vol. 26, No. 3, pp. 631–642
+  topics: [variational]
+  links: {doi: "10.1007/s11228-017-0408-9"}
+
+# ----- 2017 -----------------------------------------------------------------
+- kind: journal
+  year: 2017
+  authors: H. Antil, M. Hintermüller, R. H. Nochetto, T. M. Surowiec, and D. Wegner
+  title: Finite horizon model predictive control of electrowetting on dielectric with pinning
+  venue: Interfaces and Free Boundaries
+  details: Vol. 19, No. 1, pp. 1–30
+  topics: [variational, interdisciplinary]
+  links: {doi: "10.4171/IFB/375"}
+
+- kind: other
+  year: 2017
+  authors: D. P. Kouri and T. M. Surowiec
+  title: PDE-constrained optimization under uncertainty
+  venue: SIAG/OPT Views and News
+  details: Vol. 25, No. 2
+  topics: [risk]
+  links: {}
+  note: Newsletter article
+
+# ----- 2016 -----------------------------------------------------------------
+- kind: journal
+  year: 2016
+  authors: M. Hintermüller and T. M. Surowiec
+  title: A bundle-free implicit programming approach for a class of elliptic MPECs in function space
+  venue: Mathematical Programming
+  details: Vol. 160, No. 1–2, pp. 271–305
+  topics: [variational]
+  links: {doi: "10.1007/s10107-016-0983-9"}
+
+- kind: journal
+  year: 2016
+  authors: D. P. Kouri and T. M. Surowiec
+  title: Risk-averse PDE-constrained optimization using the conditional value-at-risk
+  venue: SIAM Journal on Optimization
+  details: Vol. 26, No. 1, pp. 365–396
+  topics: [risk]
+  links: {doi: "10.1137/140954556"}
+
+# ----- 2015 and earlier -----------------------------------------------------
+- kind: journal
+  year: 2015
+  authors: M. Hintermüller, T. M. Surowiec, and A. Kämmler
+  title: "Generalized Nash equilibrium problems in Banach spaces: Theory, Nikaido–Isoda-based path-following methods, and applications"
+  venue: SIAM Journal on Optimization
+  details: Vol. 25, No. 3, pp. 1826–1856
+  topics: [games, variational]
+  links: {doi: "10.1137/14096829X"}
+
+- kind: chapter
+  year: 2022
+  authors: M. Hintermüller and T. M. Surowiec
+  title: "Generalized Nash equilibrium problems with partial differential operators: Theory, algorithms, and risk aversion"
+  venue: "In: Non-Smooth and Complementarity-Based Distributed Parameter Systems"
+  details: International Series of Numerical Mathematics, Springer
+  topics: [games, risk]
+  links: {doi: "10.1007/978-3-030-79393-7"}
+
+- kind: chapter
+  year: 2014
+  authors: M. Hintermüller, A. Laurain, C. Löbhard, C. N. Rautenberg, and T. M. Surowiec
+  title: "Elliptic mathematical programs with equilibrium constraints in function space: Optimality conditions and numerical realization"
+  venue: "In: Trends in PDE Constrained Optimization"
+  details: International Series of Numerical Mathematics, Vol. 165, Springer, pp. 133–153
+  topics: [variational, numerics]
+  links: {doi: "10.1007/978-3-319-05083-6_9"}
+
+- kind: journal
+  year: 2014
+  authors: M. Hintermüller, B. S. Mordukhovich, and T. M. Surowiec
+  title: Several approaches for the derivation of stationarity conditions for elliptic MPECs with upper-level control constraints
+  venue: Mathematical Programming
+  details: Vol. 146, No. 1–2, pp. 555–582
+  topics: [variational]
+  links: {doi: "10.1007/s10107-013-0704-6"}
+
+- kind: journal
+  year: 2013
+  authors: M. Hintermüller and T. M. Surowiec
+  title: A PDE-constrained generalized Nash equilibrium problem with pointwise control and state constraints
+  venue: Pacific Journal of Optimization
+  details: Vol. 9, No. 2, pp. 251–273
+  topics: [games, variational]
+  links: {pdf: "http://www.ybook.co.jp/online-p/PJO/vol9/pjov9n2p251.pdf"}
+
+- kind: journal
+  year: 2012
+  authors: R. Henrion, J. V. Outrata, and T. M. Surowiec
+  title: On regular coderivatives in parametric equilibria with non-unique multipliers
+  venue: Mathematical Programming
+  details: Vol. 136, No. 1, pp. 111–131
+  topics: [variational]
+  links: {doi: "10.1007/s10107-012-0553-8"}
+
+- kind: journal
+  year: 2012
+  authors: R. Henrion, J. V. Outrata, and T. M. Surowiec
+  title: Analysis of M-stationary points to an EPEC modeling oligopolistic competition in an electricity spot market
+  venue: "ESAIM: Control, Optimisation and Calculus of Variations"
+  details: Vol. 18, pp. 295–317
+  topics: [games, variational]
+  links: {doi: "10.1051/cocv/2011003"}
+
+- kind: journal
+  year: 2011
+  authors: M. Hintermüller and T. M. Surowiec
+  title: First-order optimality conditions for elliptic mathematical programs with equilibrium constraints via variational analysis
+  venue: SIAM Journal on Optimization
+  details: Vol. 21, No. 4, pp. 1561–1593
+  topics: [variational]
+  links: {doi: "10.1137/100802396"}
+
+- kind: journal
+  year: 2011
+  authors: R. Henrion and T. M. Surowiec
+  title: On calmness conditions in convex bilevel programming
+  venue: Applicable Analysis
+  details: Vol. 90, pp. 951–970
+  topics: [variational]
+  links: {doi: "10.1080/00036811.2010.495339"}
+
+- kind: journal
+  year: 2010
+  authors: R. Henrion, J. V. Outrata, and T. M. Surowiec
+  title: A note on the relation between strong and M-stationarity for a class of mathematical programs with equilibrium constraints
+  venue: Kybernetika
+  details: Vol. 46, pp. 423–434
+  topics: [variational]
+  links: {pdf: "https://dml.cz/bitstream/handle/10338.dmlcz/140758/Kybernetika_46-2010-3_8.pdf"}
+
+- kind: journal
+  year: 2009
+  authors: R. Henrion, J. V. Outrata, and T. M. Surowiec
+  title: On the co-derivative of normal cone mappings to inequality systems
+  venue: "Nonlinear Analysis: Theory, Methods & Applications"
+  details: Vol. 71, No. 3–4, pp. 1213–1226
+  topics: [variational]
+  links: {doi: "10.1016/j.na.2008.11.089"}
+
+- kind: journal
+  year: 2007
+  authors: D. Bauer, E. Schmeichel, and T. M. Surowiec
+  title: Subdivision of edges and matching size
+  venue: Ars Combinatoria
+  details: Vol. 84, pp. 141–153
+  topics: []
+  links: {}
+
+- kind: journal
+  year: 2007
+  authors: D. Bauer, H. J. Broersma, N. Kahl, A. Morgana, E. Schmeichel, and T. M. Surowiec
+  title: "Tutte sets in graphs II: The complexity of finding maximum Tutte sets"
+  venue: Discrete Applied Mathematics
+  details: Vol. 155, pp. 1336–1343
+  topics: []
+  links: {doi: "10.1016/j.dam.2007.02.002"}
+
+# ----- Interdisciplinary (medicine) -----------------------------------------
+- kind: journal
+  year: 2022
+  authors: A. Kirschbaum, J. Jonas, T. M. Surowiec, A. Pehl, and N. Mirow
+  title: "Detection of the lateral thermal spread during bipolar vessel sealing in an ex vivo model: preliminary results"
+  venue: Diagnostics
+  details: Vol. 12, No. 5, Art. 1217
+  topics: [interdisciplinary]
+  links: {doi: "10.3390/diagnostics12051217"}
+
+- kind: journal
+  year: 2021
+  authors: A. Kirschbaum, T. M. Surowiec, A. Pehl, T. Wiesmann, D. K. Bartsch, and N. Mirow
+  title: "Local lung coagulation post resection: an ex-vivo porcine model"
+  venue: Lasers in Medical Science
+  topics: [interdisciplinary]
+  links: {doi: "10.1007/s10103-021-03280-7"}
+
+- kind: journal
+  year: 2018
+  authors: A. Kirschbaum, T. M. Surowiec, A. Pehl, A. Gockel, D. K. Bartsch, and N. Mirow
+  title: Suturing of the laser resection area is recommended over a depth of 2 cm in an experimental porcine lung model
+  venue: Journal of Thoracic Disease
+  details: Vol. 10, No. 9, pp. 5339–5345
+  topics: [interdisciplinary]
+  links: {doi: "10.21037/jtd.2018.08.122"}
