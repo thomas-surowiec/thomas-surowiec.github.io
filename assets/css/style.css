@@ -185,7 +185,7 @@ p, li { text-wrap: pretty; }
 
 .lede { font-size: 1.22rem; line-height: 1.55; color: var(--ink); }
 .facts .portrait { width: 200px; aspect-ratio: 1; border-radius: 50%; overflow: hidden; margin: 0 0 2rem;
-  box-shadow: 0 0 0 1px var(--rule), 0 16px 36px -18px rgba(20,30,40,.4); background: #8a4f22; }
+  box-shadow: 0 0 0 1px var(--rule), 0 16px 36px -18px rgba(20,30,40,.4); background: #b9cfe2; }
 .facts .portrait img { width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 860px) { .facts .portrait { width: 160px; } }
 
